@@ -11,8 +11,8 @@ class Stats {
   }
 
   processData(data) {
-    this.perRegione(data);
-    this.perSettore(data);
+    this.perRegione(data.slice(0));
+    this.perSettore(data.slice(0));
     this.perDomande(data);
   }
 
